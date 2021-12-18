@@ -12,6 +12,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
 /********** 
 *  HOME
 **********/
@@ -19,7 +24,7 @@ body{
 .home{
     position: relative;
     background-image:url(../images/bg-home.jpg);
-    height: 100vh; /* vh = tamanho da tela do navegador */ 
+    height: 100vh; 
     background-size: cover;
 }
 
@@ -70,7 +75,6 @@ body{
 .home .banner{
     color:white;
     text-align: center;
-
     position: absolute;
     height: 270px;
     width: 770px;
@@ -97,4 +101,107 @@ body{
 
 .home .banner .slogan2{
     margin-bottom: 15px;
+}
+
+
+
+/*************** 
+*  ABOUT
+****************/
+
+.about{
+    background-color: var(--colorPrimary);
+}
+
+.about .container{
+    display: flex;
+}
+
+.about .timing{
+    width: 33%;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../images/brush-big.jpg);
+    position: relative;
+    top: -50px;
+}
+
+.about .timing .overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.about .timing .overlay .icon-cut{
+    width: 50px;
+}
+
+.about .timing h3{
+    color: var(--colorPrimary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--colorPrimary);
+    width: fit-content;
+    font-size: 30px;
+    margin: 0 auto 30px auto;
+}
+
+.about .timing .text{
+    margin: 10px 0;
+}
+
+.about .timing .text::after{
+    content:'•';
+    display: block;
+    color:white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about .timing .text:last-of-type::after{
+    content: "|";
+}
+
+.about .timing .text h4{
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .timing span{
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+
+.about .experience{
+    width: 66%;
+    color: white;
+    margin: 7%;
+    margin-top: 100px;
+}
+
+.about .experience h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2::after{
+    display: block;
+    content:"";
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p{
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
 }
